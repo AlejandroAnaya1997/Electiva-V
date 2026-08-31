@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // --- Punto 5: Seleccionar elementos .destacado y cambiar fondo a amarillo ---
+    // Seleccionar elementos .destacado y cambiar fondo a amarillo ---
     const btnEjercicio1 = document.getElementById("ejercicio1");
     if (btnEjercicio1) {
         btnEjercicio1.addEventListener("click", () => {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // --- Punto 7: Seleccionar <a> en #menu y agregar la clase 'activo' ---
+    // Seleccionar <a> en #menu y agregar la clase 'activo' ---
     const btnEjercicio2 = document.getElementById("ejercicio2");
     if (btnEjercicio2) {
         btnEjercicio2.addEventListener("click", () => {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // --- Punto 8: Seleccionar <img> con atributo 'alt' y agregar borde azul ---
+    // Seleccionar <img> con atributo 'alt' y agregar borde azul ---
     const btnEjercicio3 = document.getElementById("ejercicio3");
     if (btnEjercicio3) {
         btnEjercicio3.addEventListener("click", () => {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // --- Punto 9: Seleccionar <li> impares de .tareas y poner en negrita ---
+    // Seleccionar <li> impares de .tareas y poner en negrita ---
     const btnEjercicio4 = document.getElementById("ejercicio4");
     if (btnEjercicio4) {
         btnEjercicio4.addEventListener("click", () => {
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // --- Punto 10: Función para desmarcar checkboxes marcados ---
+    // Función para desmarcar checkboxes marcados ---
     const btnEjercicio5 = document.getElementById("ejercicio5");
     function desmarcarCheckboxes() {
         const checkboxesMarcados = document.querySelectorAll('input[type="checkbox"]:checked');
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btnEjercicio5.addEventListener("click", desmarcarCheckboxes);
     }
 
-    // --- Punto 11: Lista de tareas dinámica ---
+    // Lista de tareas dinámica ---
     const btnAgregarTarea = document.getElementById("btn-agregar-tarea");
     const contenedorLista = document.getElementById("lista-tareas");
     let contadorTareas = 1;
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 contenedorLista.appendChild(ul);
             }
 
-            // 1 & 3. Crear <li> con número consecutivo y añadir al <ul>
+            // Crear <li> con número consecutivo y añadir al <ul>
             const nuevoLi = document.createElement("li");
             nuevoLi.textContent = `Tarea ${contadorTareas}`;
             ul.appendChild(nuevoLi);
