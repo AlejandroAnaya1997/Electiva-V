@@ -38,3 +38,22 @@ console.log(`resultado2++ : ${resultado2}`);
 
 resultado3++;
 console.log(resultado3);
+
+
+// 4. Métodos de Strings (Parte 3)
+
+let mensaje = "El desarrollo web es lo máximo";
+
+// Métodos de búsqueda
+console.log(`¿Incluye 'web'?: ${mensaje.includes("web")}`);
+console.log(`Posición de 'desarrollo': ${mensaje.indexOf("desarrollo")}`);
+console.log(`¿Empieza con 'El'?: ${mensaje.startsWith("El")}`);
+console.log(`¿Termina con 'máximo'?: ${mensaje.endsWith("máximo")}`);
+
+// Métodos de reemplazo
+console.log(`Reemplazo simple: ${mensaje.replace("lo máximo", "genial")}`);
+console.log(`Reemplazo de caracteres: ${mensaje.replaceAll("e", "X")}`);
+
+// Métodos de casing
+console.log(`Mayúsculas: ${mensaje.toUpperCase()}`);
+console.log(`Minúsculas: ${mensaje.toLowerCase()}`);
